@@ -1,0 +1,479 @@
+/*
+  Theme Name: MNEI
+  Theme URL: http://localhost/html-mnei
+  Description: Juste un theme de test
+  Version: 1.0
+  Author: Eve Issartel & Joaquim Soares
+*/
+
+/* RAZ */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{ margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6{ font-size:100%; font-weight:normal;}
+
+
+
+body{
+	font-family: 'Cabin Condensed', sans-serif;
+	/*background-color: #009dd7;*/
+	background: url(images/mnei-bg.png) repeat-x;
+	margin: 0 auto;
+}
+
+/* ##### HEADER ##### */
+#header{
+	background-color: #FFF;
+	width: 100%;
+	height: 130px;
+	margin-bottom: 22px;
+	position: relative;
+	z-index: 10;
+}
+#header #header-container{
+	background-color: #FFF;
+	width: 1000px;
+	height: 130px;
+	margin: 0 auto;
+}
+#header #header-container #logo{
+	position: absolute;
+	height: 130px;
+	width: 140px;
+}
+#header #header-container #menu{
+	height: 130px;
+	margin-left: 140px;
+	position: absolute;
+}
+#header #header-container #menu dl{
+	height: 40px;
+	width: 150px;
+	margin: 0; padding: 0;
+	margin-left: 22px;
+	display: block;
+	float: left;
+}
+#header #header-container #menu dt{
+	display: block;
+	width: 150px;
+	height: 95px;	/* 95 + 35 de padding = 130px */
+	color: #FFF;
+	font-size: 22px;
+	/* centrage du text sur deux lignes à améliorer */
+	line-height: 50 px;
+	padding-top: 35px;
+	/**/
+	text-align: center;
+	cursor: pointer;
+	/* background & color transition */		
+	-webkit-transition-property: background-color, color;
+	-webkit-transition-duration: .2s;
+	-webkit-transition-timing-function: linear;
+	/* When being supported by FF */
+	-moz-transition-property: background-color, color;
+	-moz-transition-duration: .2s;
+	-moz-transition-timing-function: linear;
+	/* … and if it's standardised one day (#optimism) */
+	transition-property: background-color, color;
+	transition-duration: .2s;
+	transition-timing-function: linear;
+}
+#header #header-container #menu dd{
+	width: 150px;
+	margin: 0; padding: 0;
+	display: block;
+	float: left;
+	background-color: #FFFFFF;
+}
+#header #header-container #menu dd ul{
+	margin: 0; padding: 0;
+	text-align: center;
+	list-style: none;
+}
+#header #header-container #menu dd ul li{
+	display: block;
+	margin: 0; padding: 0;
+}
+#header #header-container #menu dd ul li a{
+	color: #000;
+	display: block;
+	text-decoration: none;
+	height: 30px;
+	line-height: 30px;
+}
+#header #header-container #menu dd ul li a:hover{
+	background-color: #000;
+	color: #FFF;
+}
+#header #header-container #menu dl dd{
+	display: none;
+}
+#header #header-container #menu dl:hover dd{
+	display: block;
+}
+/* Personnalisation des onglets du menu */
+#header #header-container #menu dl #nous-connaitre{
+	background-color: #009dd7;
+}
+#header #header-container #menu dl #nous-connaitre:hover{
+	color: #000;
+	background-color: #40C8FA;
+}
+#header #header-container #menu dl #les-associations{
+	background-color: #c20989;
+}
+#header #header-container #menu dl #les-associations:hover{
+	color: #000;
+	background-color: #FF56CB;
+}
+#header #header-container #menu dl #la-mediatheque{
+	background-color: #d4d700;
+}
+#header #header-container #menu dl #la-mediatheque:hover{
+	color: #000;
+	background-color: #F6F944;
+}
+#header #header-container #menu dl #nos-activites{
+	background-color: #ff9600;
+}
+#header #header-container #menu dl #nos-activites:hover{
+	color: #000;
+	background-color: #FDB34A;
+}
+#header #header-container #menu dl #agenda{
+	background-color: #83c209;
+	height: 130px;
+	line-height: 130px;
+	padding: 0px;
+}
+#header #header-container #menu dl #agenda:hover{
+	color: #000;
+	background-color: #BCFA44;
+}
+/* ##### FIN HEADER ##### */
+
+
+
+/* ##### MAIN ##### */
+#main{
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/* ----- CONTENT ----- */
+#main #content{
+	position: relative;
+	float: left;
+	left: 0px;
+	top: 0px;
+	width: 656px;
+}
+/*       SLIDER       */
+#main #content #slider{
+	width: 290px;
+	height: 260px;
+}
+#main #content #slider a{
+	width: 656px;
+	height: 260px;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+#main #content #slider a img{
+	width: 290px;
+	height: 260px;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#main #content #slider a span{
+	background: url(images/mnei-slider-bg.png) no-repeat;
+	width: 366px;
+	height: 260px;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+}
+#main #content #slider a span h4{
+	font-size : 42px;
+	line-height: 35px;
+	margin-top: 70px;
+	margin-left: 30px;
+}
+#main #content #slider a span p{
+	width: 315px;
+	font-size : 15px;
+	margin-top: 10px;
+	margin-left: 30px;
+	word-wrap: break-word;
+}
+#main #content .clearfix {
+    float: none;
+    clear: both;
+}
+#main #content .prev, #main #content .next {
+    margin-left: 10px;
+    width:15px;
+    height:21px;           
+    display:block;             
+    text-indent:-999em;
+    background: transparent url(images/carousel_control.png) no-repeat 0 0;
+    position:absolute;
+    top:210px;
+    z-index: 1;             
+}
+#main #content .prev {
+    background-position:0 0;
+    left:285px;
+}
+#main #content .prev:hover {
+    left:284px;
+    border: none;
+    text-decoration:none;
+}          
+#main #content .next {
+    background-position: -18px 0;
+    right:5px;
+}
+#main #content .next:hover {
+    right:4px;
+}              
+#main #content .pager {
+	position: absolute;
+	width: 366px;
+	top: 213px;
+	left: 290px;
+    margin:0;
+    text-align: center;
+}
+#main #content .pager a {
+    margin: 0 5px 0 0;
+    text-decoration: none;
+    display:inline-block;
+    width:14px;
+    height:14px;
+    background: transparent url(images/mnei-slider-control.png) no-repeat 0px -14px;
+    text-indent:-999em;
+}
+#main #content .pager a.selected {
+    text-decoration: underline;
+    background: transparent url(images/mnei-slider-control.png) no-repeat 0px 0px;               
+}
+/*       FIN SLIDER       */
+#main #content #news{
+	position: relative;
+	display: block;
+	background-color: #FFF;
+	width: 656px;
+	margin-top: 20px;
+	-moz-box-shadow: -4px 4px 12px #aaa; 
+  	-webkit-box-shadow: -4px 4px 12px #aaa; 
+  	box-shadow: -4px 4px 12px #aaa; 
+	z-index: 3;
+}
+#main #content #news #actu{
+	position: absolute;
+	float: left;
+	top:0px;
+	left:0px;
+}
+#main #content #news #article-container{
+	width: 656px;
+	padding-top:45px;
+}
+#main #content #news #article-container #article{
+	width: 526px;
+	margin-left: 110px;
+	padding-right: 20px;
+}
+#main #content #news #article-container img{
+	margin: 20px 0;
+}
+#main #content #news #article-container #article #date{
+	float: left;
+	padding-top: 7px;
+	width: 45px;
+	height: 38px;
+	color: #FFF;
+	text-align: center;
+	font-size: 15px;
+	line-height: 15px;
+	background-color: #A0BB36;
+}
+#main #content #news #article-container h3{
+	margin-left: 65px;
+	color: #A0BB36;
+}
+#main #content #news #article-container h3 a{
+	color: #A0BB36;
+	text-decoration: none;
+	font-size: 30px;
+	line-height: 24px;
+}
+#main #content #news #article-container p{
+	margin-left: 65px;
+	font-size: 16px;
+	text-align: justify;
+	word-wrap: break-word;
+}
+#main #content #news #article-container p a{
+	text-decoration: none;
+	color: #A0BB36;
+}
+#main #content #news h4{
+	position: absolute;
+	right: 0px;
+	bottom: 22px;
+}
+#main #content #news h4 a{
+	text-decoration: none;
+	color: #A0BB36;
+}
+/* ----- FIN CONTENT ----- */
+
+/* ----- SIDEBAR ----- */
+#main #sidebar{
+	width: 322px;
+	margin-left: 22px;
+	float: left;
+	position: relative;
+}
+#main #sidebar #video{
+	width: 322px;
+	height: 260px;
+}
+#main #sidebar #search{
+	width: 322px;
+	height: 30px;
+	margin-top: 20px;
+}
+#main #sidebar #search img{
+	margin-right: 5px;
+	border: none;
+	float: left;
+}
+#main #sidebar #search #search-field{
+	margin-left: 13px;
+	margin-right: 0px;
+}
+#main #sidebar #newsletter{
+	position: relative;
+	background: url(images/mnei-newsletter.png) no-repeat;
+	width: 322px;
+	height: 100px;
+	margin-top: 10px;
+}
+#main #sidebar #newsletter p{
+	position: absolute;
+	width: 140px;
+	text-align: right;
+}
+#main #sidebar #newsletter #lettre{
+	margin-top: 15px;
+	font-size: 40px;
+}
+#main #sidebar #newsletter #info{
+	margin-top: 55px;
+	font-size: 25px;
+}
+#main #sidebar #newsletter #liens{
+	position: absolute;
+	width: 140px;
+	left: 135px;
+	top: 20px;
+	margin-left: 10px;
+	text-align: left;
+}
+#main #sidebar #newsletter #liens a{
+	width: 140px;
+	font-size: 25px;
+	text-decoration: none;
+	color: #B6C96E;
+}
+#main #sidebar #favorite{
+	position: relative;
+	background: url(images/mnei-favorite.png) no-repeat;
+	width: 322px;
+	height: 100px;
+	margin-top: 10px;
+	color: #FFF;
+}
+#main #sidebar #favorite #big{
+	position: absolute;
+	font-size: 40px;
+	line-height: 35px;
+	top: 5px;
+	left: 120px;
+
+}
+#main #sidebar #favorite #small{
+	position: absolute;
+	font-size: 22px;
+	top: 72px;
+	left: 121px;	/* 1 pixel de plus pour l'alignement */
+
+}
+#main #sidebar #agenda{
+	width: 322px;
+	height: 200px;
+	margin-top: 10px;
+}
+/* ----- FIN SIDEBAR ----- */
+
+/* ----- FOOTER ----- */
+#footer{
+	position: relative;
+	float: left;
+	padding-top: 10px;
+	margin: 0 auto;
+	width: 1000px;
+}
+#footer img{
+	display: block;
+	margin: 0 auto;
+	width: 693px;
+	height: 72px;
+}
+#footer ul{
+	display: block;
+	margin: 0 auto;
+	padding-left: 75px;
+	width: 693px;
+	height: 50px;
+}
+#footer ul li{
+	float: left;
+	width: 95px;
+	height: 30px;
+	line-height: 30px;
+	list-style: none;
+	text-align: center;
+	
+}
+#footer ul li a{
+	text-decoration: none;
+	width: 95px;
+	font-size: 15px;
+	color: #80807E;
+}
+#footer ul li a:hover{
+	text-decoration: bold;
+	color: #525252;
+}
+#footer ul li a img{
+	float: right;
+	margin-top: 5px;
+	margin-right: 25px;
+	width: 20px;
+	height: 20px;
+	text-decoration: none;
+}
+/* ----- FIN FOOTER ----- */
+
+/* ##### FIN MAIN ##### */

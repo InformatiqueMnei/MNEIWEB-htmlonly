@@ -1,0 +1,224 @@
+/*
+  Theme Name: MNEI
+  Theme URL: http://localhost/html-mnei
+  Description: Juste un theme de test
+  Version: 1.0
+  Author: Eve Issartel & Joaquim Soares
+*/
+
+body{
+	font-family: 'Cabin Condensed', sans-serif;
+	margin: 0 auto;
+}
+
+/* ##### HEADER ##### */
+#header{
+	background-color: #FFF;
+	width: 100%;
+	height: 130px;
+	margin-bottom: 22px;
+	position: relative;
+	z-index: 10;
+}
+#header #header-container{
+	background-color: #FFF;
+	width: 1000px;
+	height: 130px;
+	margin: 0 auto;
+}
+#header #header-container #logo{
+	position: absolute;
+	height: 130px;
+	width: 140px;
+}
+#header #header-container #menu{
+	margin-left: 140px;
+	position: absolute;
+}
+#header #header-container #menu dl{
+	height: 40px;
+	width: 150px;
+	margin: 0; padding: 0;
+	margin-left: 22px;
+	display: block;
+	float: left;
+}
+#header #header-container #menu dt{
+	display: block;
+	width: 150px;
+	height: 95px;	/* 95 + 35 de padding = 130px */
+	color: #FFF;
+	font-size: 22px;
+	/* centrage du text sur deux lignes à améliorer */
+	line-height: 50 px;
+	padding-top: 35px;
+	/**/
+	text-align: center;
+	cursor: pointer;
+	/* background & color transition */		
+	-webkit-transition-property: background-color, color;
+	-webkit-transition-duration: .2s;
+	-webkit-transition-timing-function: linear;
+	/* When being supported by FF */
+	-moz-transition-property: background-color, color;
+	-moz-transition-duration: .2s;
+	-moz-transition-timing-function: linear;
+	/* … and if it's standardised one day (#optimism) */
+	transition-property: background-color, color;
+	transition-duration: .2s;
+	transition-timing-function: linear;
+}
+#header #header-container #menu dd{
+	width: 150px;
+	margin: 0; padding: 0;
+	display: block;
+	float: left;
+	background-color: #FFFFFF;
+}
+#header #header-container #menu dd ul{
+	margin: 0; padding: 0;
+	text-align: center;
+	list-style: none;
+}
+#header #header-container #menu dd ul li{
+	display: block;
+	margin: 0; padding: 0;
+}
+#header #header-container #menu dd ul li a{
+	color: #000;
+	display: block;
+	text-decoration: none;
+	height: 30px;
+	line-height: 30px;
+}
+#header #header-container #menu dd ul li a:hover{
+	background-color: #000;
+	color: #FFF;
+}
+#header #header-container #menu dl dd{
+	display: none;
+}
+#header #header-container #menu dl:hover dd{
+	display: block;
+}
+/* Personnalisation des onglets du menu */
+#header #header-container #menu dl #nous-connaitre{
+	background-color: #009dd7;
+}
+#header #header-container #menu dl #nous-connaitre:hover{
+	color: #000;
+	background-color: #40C8FA;
+}
+#header #header-container #menu dl #les-associations{
+	background-color: #c20989;
+}
+#header #header-container #menu dl #les-associations:hover{
+	color: #000;
+	background-color: #FF56CB;
+}
+#header #header-container #menu dl #la-mediatheque{
+	background-color: #d4d700;
+}
+#header #header-container #menu dl #la-mediatheque:hover{
+	color: #000;
+	background-color: #F6F944;
+}
+#header #header-container #menu dl #nos-activites{
+	background-color: #ff9600;
+}
+#header #header-container #menu dl #nos-activites:hover{
+	color: #000;
+	background-color: #FDB34A;
+}
+#header #header-container #menu dl #agenda{
+	background-color: #83c209;
+	height: 130px;
+	line-height: 130px;
+	padding: 0px;
+}
+#header #header-container #menu dl #agenda:hover{
+	color: #000;
+	background-color: #BCFA44;
+}
+/* ##### FIN HEADER ##### */
+
+
+/* ##### MAIN ##### */
+#main{
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/* ##### PAGE ##### */
+#main #page{
+	width: 100%;
+	background-color: #FFF;
+}
+#main #page img{
+	float: left;
+	margin: 10px 30px 10px 10px;
+}
+#main #page h2{
+	font-size: 40px;
+	margin: 0;
+	color: #A0BB36;
+}
+#main #page p{
+	padding-bottom: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: justify;
+	word-wrap: break-word;
+}
+/* ##### FIN PAGE ##### */
+
+/* ----- FOOTER ----- */
+#footer{
+	position: relative;
+	top: -16px;
+	background-color: #FFF;
+	float: left;
+	padding-top: 10px;
+	margin: 0 auto;
+	width: 1000px;
+}
+#footer img{
+	display: block;
+	margin: 0 auto;
+	width: 693px;
+	height: 72px;
+}
+#footer ul{
+	display: block;
+	margin: 0 auto;
+	padding-left: 75px;
+	width: 693px;
+	height: 50px;
+}
+#footer ul li{
+	float: left;
+	width: 95px;
+	height: 30px;
+	line-height: 30px;
+	list-style: none;
+	text-align: center;
+	
+}
+#footer ul li a{
+	text-decoration: none;
+	width: 95px;
+	font-size: 15px;
+	color: #80807E;
+}
+#footer ul li a img{
+	float: right;
+	margin-top: 5px;
+	margin-right: 25px;
+	width: 20px;
+	height: 20px;
+	text-decoration: none;
+}
+/* ----- FIN FOOTER ----- */
+
+/* ##### FIN MAIN ##### */
